@@ -1,0 +1,98 @@
+.c-table{
+    &__kaikei{
+        margin-top: 1%;
+        width: 100%;
+        border-collapse: collapse;
+          th{
+            background-color: aquamarine;
+            font-size: 4vw;
+            line-height: 5vw;
+            height: 5vw;
+            border: 1px solid #9f9787;
+          }
+          td{
+            text-align: center;
+            font-size: 4vw;
+            line-height: 8vw;
+            height: 8vw;
+            border: 1px solid #9f9787;
+          }
+          .col-0{
+            width: 8%;
+            a{
+              color: black;
+              border: solid thin #707070;
+              background-color: cyan;
+            }
+            a:visited{
+              color: black;
+          }
+          }
+          .col-1{
+            width: 18%;
+          }
+          .col-2{
+            width: 18%;
+          }
+          .col-3{
+            display: none;
+          }
+          .col-4{
+            display: none;
+          }
+          .col-5{
+            width: 10%;
+          }
+          .col-6{
+            width: 10%
+          }
+          .col-7{
+            width: 15%;
+          }
+          @media(min-width:769px){
+
+
+              margin-top: 3%;
+              width: 100%;
+
+            th{
+              background-color: aquamarine;
+              font-size: 1.5vw;
+              line-height: 2vw;
+              height: 2vw;
+            }
+            td{
+              text-align: center;
+              font-size: 1.5vw;
+              line-height: 2vw;
+              height: 2vw;
+            }
+            .col-0{
+              display: none;
+            }
+            .col-1{
+              width: 8%;
+            }
+            .col-2{
+              width: 8%;
+            }
+            .col-3{
+              width: 22%;
+            }
+            .col-4{
+              width: 22%;
+            }
+            .col-5{
+              width: 10%;
+            }
+            .col-6{
+              width: 10%
+            }
+            .col-7{
+              width: 15%;
+            }
+            
+          }
+        }
+        
+}

@@ -1,0 +1,36 @@
+.p-form{
+    font-size: 6rem;
+    input{
+        background-color: white;
+    }
+    select{
+        width: 40%;
+        padding-left: 2rem;
+    }
+    textarea{
+        background-color: white;
+        width: 100%;
+        border: solid thin #707070;
+    }
+    button{
+        padding: 1rem 4rem 1rem 4rem;
+        font-size: 8rem;
+        width: 50%;
+        margin-top: 2rem;
+    }
+    &__title{
+        font-weight: bolder;
+        text-align: center;
+    }
+    &__group{
+        margin: 2rem 2.5rem 2rem 2.5rem;
+    }
+    &__check{
+        display: inline-block;
+        margin-left: 3rem;
+
+    }
+    &__submit{
+        text-align: center;
+    }
+}

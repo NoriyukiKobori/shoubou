@@ -1,0 +1,68 @@
+html{
+    font-family: 'mplus-1m-regular';
+    font-size: 1vw;
+    background-color: blanchedalmond;
+}
+
+body{
+    display: grid;
+    grid-template: 
+        "header" 15vw
+        "main" auto
+        "footer" 10vw/100%;
+    @include breakpoint(wide){
+        grid-template:
+            "header sidebar" 15vw
+            "main sidebar" auto
+            "footer sidebar" 10vw/80% 20%;
+    }
+    header{
+        grid-area: header;
+        background-color: darkcyan;
+    }
+    main{
+        grid-area: main;
+        background-color: blanchedalmond;
+    }
+    footer{
+        grid-area: footer;
+        background-color: blanchedalmond;
+        bottom: 0;
+    }
+    .l-sidebar{
+        grid-area: sidebar;
+        background-color: cadetblue;
+    }
+
+    a{
+        text-decoration: none;
+    }
+    h1{
+        color: blanchedalmond;
+        font-size: 7rem;
+    }
+    h2{
+        color: black;
+        font-size: 7rem;
+    }
+    p{
+        font-size: 5rem;
+    }
+    li{
+        color: blanchedalmond;
+        font-size: 5rem;
+    }
+
+
+}
+button, select, input{
+    border: solid thin #707070;
+    border-radius: 5%;
+    background-color: cyan;
+    cursor: pointer;
+    padding: 0 2rem 0 2rem;
+}
+select{
+    background-color: white;
+    padding: 0 2rem 0 2rem;
+}
