@@ -10,7 +10,7 @@
     $date = $kaikei->date;
     $kubun = $kaikei->kubun;
     $title = $kaikei->title;
-    $torihikisaki = $kaikei->$torihikisaki;
+    $torihikisaki = $kaikei->torihikisaki;
     $type = $kaikei->type;
     $amount = $kaikei->amount;
     $shori = $kaikei->shori;

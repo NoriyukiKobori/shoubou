@@ -48,6 +48,7 @@
         <option>車両関係</option>
         <option>その他</option>
         <option>収入</option>
+        <option>繰越金</option>
         </select>
       </div>
       <div class="p-form__group">
