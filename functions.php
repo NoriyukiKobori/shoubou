@@ -19,6 +19,7 @@
         wp_enqueue_style('style',get_template_directory_uri() .'/css/style.css',array());
         wp_enqueue_style('style', get_template_directory_uri() . '/style.css', array(), '1.0.0');
         wp_enqueue_script('menu', get_template_directory_uri() . '/js/menu.js', array('jquery'),true);
+        wp_enqueue_script('alert', get_template_directory_uri() . '/js/alert.js', array('jquery'),true);
     }
     add_action('wp_enqueue_scripts', 'hanawashouboh_script');
 

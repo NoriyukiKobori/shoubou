@@ -9,9 +9,11 @@
     $type = $_POST['type'];  
     $shori = $_POST['shori'];
     $bikou = $_POST['bikou'];
+    $user = wp_get_current_user();
+    $crname = $user->display_name;
 
     global $wpdb;
-    $sql_in = $wpdb->prepare("INSERT INTO $wpdb->kaikeis (nendo, date, kubun, title, torihikisaki, amount, type, shori ,bikou, created_at, updated_at) VALUES(%s , %s , %s , %s , %s , %d , %d , %s ,%s , now() , now())" , $nendo , $date , $kubun , $title , $torihikisaki , $amount , $type , $shori, $bikou);
+    $sql_in = $wpdb->prepare("INSERT INTO $wpdb->kaikeis (nendo, date, kubun, title, torihikisaki, amount, type, shori ,bikou, created_at, updated_at, created_name, updated_name ) VALUES(%s , %s , %s , %s , %s , %d , %d , %s , %s , now() , now() , %s , %s )" , $nendo , $date , $kubun , $title , $torihikisaki , $amount , $type , $shori, $bikou , $crname , $crname);
     $result = $wpdb->query($sql_in);
 
     wp_redirect( esc_url(home_url('/kaikeis/')) );
