@@ -1,7 +1,15 @@
 .l-header{
     position: relative;
+    p{
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+        color: blanchedalmond;
+        font-size: 3rem;
+    }
     h1{
         text-align: center;
         margin-top: 2rem;
     }
+    
 }

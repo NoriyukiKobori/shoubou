@@ -89,6 +89,14 @@ select {
   position: relative;
 }
 
+.l-header p {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  color: blanchedalmond;
+  font-size: 3rem;
+}
+
 .l-header h1 {
   text-align: center;
   margin-top: 2rem;
@@ -337,8 +345,21 @@ select {
   width: 80%;
   margin-left: 10%;
   margin-top: 3%;
+  padding: 0;
   text-align: center;
   font-size: 5rem;
+}
+
+.p-articles__kaikei-shousai a {
+  display: inline-block;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+
+.p-articles__kaikei-shousai a:visited {
+  color: black;
 }
 
 .p-container__nendo {
